@@ -1,9 +1,9 @@
 import NextAuth from 'next-auth';
-import OktaProvider from 'next-auth/providers/okta';
+import Auth0Provider from "next-auth/providers/auth0";
 import {
-  OKTA_CLIENT_ID,
-  OKTA_CLIENT_SECRET,
-  OKTA_ISSUER,
+  AUTH0_CLIENT_ID,
+  AUTH0_CLIENT_SECRET,
+  AUTH0_ISSUER,
   authProviderConfig,
 } from '../../../config';
 
@@ -11,10 +11,10 @@ export default NextAuth({
   providers: [
     authProviderConfig
       ? authProviderConfig.provider
-      : OktaProvider({
-        clientId: OKTA_CLIENT_ID,
-        clientSecret: OKTA_CLIENT_SECRET,
-        issuer: OKTA_ISSUER,
+      : Auth0Provider({
+        clientId: AUTH0_CLIENT_ID,
+        clientSecret: AUTH0_CLIENT_SECRET,
+        issuer: AUTH0_ISSUER,
       }),
   ],
 });

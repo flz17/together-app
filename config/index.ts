@@ -12,9 +12,9 @@ export const SLACK_WORKSPACE_ID = process.env.SLACK_WORKSPACE_ID!;
 export const GOOGLE_GEOCODING_API_TOKEN = process.env.GOOGLE_GEOCODING_API_TOKEN!;
 export const GOOGLE_PLACES_API_TOKEN = process.env.GOOGLE_PLACES_API_TOKEN!;
 export const ALLOWED_REFERRER_ID = process.env.ALLOWED_REFERRER_ID!;
-export const OKTA_CLIENT_ID = process.env.OKTA_CLIENT_ID!;
-export const OKTA_CLIENT_SECRET = process.env.OKTA_CLIENT_SECRET!;
-export const OKTA_ISSUER = process.env.OKTA_ISSUER!;
+export const AUTH0_CLIENT_ID = process.env.AUTH0_CLIENT_ID!;
+export const AUTH0_CLIENT_SECRET = process.env.AUTH0_CLIENT_SECRET!;
+export const AUTH0_ISSUER = process.env.AUTH0_ISSUER!;
 export const MAPBOX_MAP_TOKEN = process.env.MAPBOX_MAP_TOKEN!;
 export const JOBS_API_TOKEN = process.env.JOBS_API_TOKEN!;
 
